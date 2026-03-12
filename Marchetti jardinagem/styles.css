@@ -1,0 +1,622 @@
+/* Cores */
+:root {
+    --cor-primaria: oklch(0.48 0.12 143.37);
+    --cor-secundaria: oklch(35.733% 0.10101 143.116);
+}
+
+/* Fonte global */
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== NAVBAR ===== */
+.icone-margem {
+    margin-left: 360px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--cor-primaria);
+}
+
+.navbar-brand {
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.margem-navbar {
+    margin-right: 300px;
+    white-space: nowrap;
+}
+
+/* Cor verde */
+.verde {
+    color: var(--cor-secundaria);
+    font-family: 'Playfair Display', serif;
+}
+
+/* Responsividade Navbar */
+@media (max-width: 1400px) {
+    .icone-margem {
+        margin-left: 200px;
+    }
+
+    .margem-navbar {
+        margin-right: 200px;
+    }
+
+    .navbar-brand {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .icone-margem {
+        margin-left: 0;
+        gap: 0.3rem;
+    }
+
+    .margem-navbar {
+        margin-right: 0;
+    }
+
+    .navbar-brand {
+        font-size: 0.8rem;
+    }
+}
+
+/* ===== HERO SECTION ===== */
+.imagem-hero {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    position: relative;
+    height: 900px;
+    width: 100%;
+}
+
+.imagem-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.5);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
+    max-width: 800px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+    color: white;
+    max-width: 600px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividade Hero */
+@media (max-width: 768px) {
+    .imagem-hero {
+        height: 100vh;
+    }
+
+    .hero-titulo {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .imagem-hero {
+        height: 100vh;
+    }
+
+    .hero-titulo {
+        font-size: 1.4rem;
+    }
+
+    .hero-subtitulo {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== SEÇÃO QUEM SOMOS (COM CARD) ===== */
+.secao-quem-somos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    margin: 0;
+}
+
+.secao-quem-somos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* ===== CARDS ===== */
+.margem-card {
+    margin: 0 auto;
+}
+
+.card-responsivo {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 50rem;
+}
+
+.card-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria);
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.card-body .btn {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    width: fit-content;
+}
+
+.card-body .btn:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+}
+
+/* ===== RESPONSIVIDADE SEÇÃO QUEM SOMOS ===== */
+@media (max-width: 768px) {
+    .secao-quem-somos {
+        min-height: 100vh;
+        padding: 2rem 1rem;
+    }
+
+    .secao-quem-somos h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .margem-card {
+        margin-left: 0;
+        width: 100% !important;
+    }
+
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao-quem-somos {
+        min-height: auto;
+        padding: 1.5rem 1rem;
+    }
+
+    .secao-quem-somos h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .margem-card {
+        margin-left: 0;
+        width: 100% !important;
+        max-width: 100%;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .card-img {
+        min-height: 200px;
+    }
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgb(54, 184, 60);
+    cursor: pointer;
+}
+
+
+/* ===== SEÇÃO SERVIÇOS ===== */
+.secao-servicos {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    margin: 0;
+    background-color: rgba(25, 135, 84, 0.08);
+    /* verde bem suave */
+
+}
+
+.secao-servicos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+/* Cards de Serviços */
+.card-servico {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.card-servico:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-servico .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-servico .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.card-servico .card-text {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.card-servico .card-footer {
+    border: none;
+    background-color: transparent;
+    padding: 0 1.25rem 1.25rem;
+}
+
+.btn-servico {
+    background-color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+    color: white;
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.btn-servico:hover {
+    background-color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
+    color: white;
+}
+
+/* ===== RESPONSIVIDADE SERVIÇOS ===== */
+@media (max-width: 768px) {
+    .secao-servicos {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .secao-servicos h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-servico .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-servico .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao-servicos {
+        padding: 1.5rem 1rem;
+    }
+
+    .secao-servicos h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-servico .card-img-top {
+        height: 150px;
+    }
+
+    .card-servico .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-servico .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== SEÇÃO CONTATOS ===== */
+.secao-contatos {
+    width: 100%;
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+.secao-contatos h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.secao-contatos h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Cards de Contato */
+.card-contato {
+    padding: 2rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-contato:hover {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Ícone de Contato */
+.icon-contato {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+}
+
+.card-contato:hover .icon-contato {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.card-contato h5 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+}
+
+.card-contato p {
+    margin: 0.5rem 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.card-contato a {
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.card-contato a:hover {
+    color: var(--cor-secundaria);
+    text-decoration: underline;
+}
+
+/* Redes Sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    background-color: var(--cor-secundaria);
+    transform: scale(1.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== RESPONSIVIDADE CONTATOS ===== */
+@media (max-width: 768px) {
+    .secao-contatos {
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+
+    .secao-contatos h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .secao-contatos h2 {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+
+    .card-contato {
+        padding: 1.5rem;
+    }
+
+    .icon-contato {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .card-contato h5 {
+        font-size: 1.1rem;
+    }
+
+    .social-icons {
+        gap: 1.5rem;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .secao-contatos {
+        padding: 1.5rem 1rem;
+    }
+
+    .secao-contatos h1 {
+        font-size: 1.5rem;
+    }
+
+    .secao-contatos h2 {
+        font-size: 1rem;
+    }
+
+    .card-contato {
+        padding: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .icon-contato {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .card-contato h5 {
+        font-size: 1rem;
+    }
+
+    .card-contato p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+.btn-hero {
+    display: inline-block;
+    background-color: #28a745;
+    /* verde */
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: #218838;
+    /* verde mais escuro no hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
