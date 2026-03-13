@@ -181,7 +181,7 @@ Algumas melhorias planejadas ou possíveis evoluções do projeto:
 
 # 📄 Licença
 
-Este projeto foi desenvolvido para fins **educacionais e demonstrativos**.
+Este projeto foi desenvolvido para fins **comerciais empresariais**.
 
 ---
 
