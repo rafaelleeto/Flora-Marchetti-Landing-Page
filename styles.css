@@ -622,7 +622,7 @@ body {
 }
 
 .fundo-desfocado {
-    background: url('images/image.png') no-repeat center center;
+    background: url('images/fundo.png') no-repeat center center;
     background-size: cover;
     filter: blur(2px) brightness(0.5);
     position: absolute;
